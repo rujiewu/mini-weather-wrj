@@ -18,8 +18,8 @@ public class CityDB {
         db = context.openOrCreateDatabase(path, Context.MODE_PRIVATE, null);
     }
 
-    public List<City> getAllCity() {
-        List<City> list = new ArrayList<City>();
+    public ArrayList<City> getAllCity() {
+        ArrayList<City> list = new ArrayList<City>();
         Cursor c = db.rawQuery("SELECT * from " + CITY_TABLE_NAME, null);
         while (c.moveToNext()) {
             String province = c.getString(c.getColumnIndex("province"));

@@ -20,7 +20,7 @@ public class MyApplication extends Application {
     private static MyApplication mApplication;
     private CityDB mCityDB;
 
-    private List<City> mCityList;
+    private ArrayList<City> mCityList;
 
     @Override
     public void onCreate() {
@@ -56,7 +56,7 @@ public class MyApplication extends Application {
         return true;
     }
 
-    public List<City> getCityList() {
+    public ArrayList<City> getCityList() {
         return mCityList;
     }
 
